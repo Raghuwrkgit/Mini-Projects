@@ -25,3 +25,12 @@ This project demonstrates DOM manipulation, event handling, and basic game logic
 - **JavaScript** – game logic and interaction
 
 ---
+
+## 📁 Project Structure
+
+  Simon-Says-Game/
+  ├── index.html # Main HTML file
+  ├── style.css # Game styling
+  ├── script.js # JavaScript logic for game
+  ├── assets/ # Images & sounds (if included)
+  ├── README.md # This file
