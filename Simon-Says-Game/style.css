@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+#level {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(2, 140px);
+    gap: 45px;
+    justify-content: center;
+}
+
+.btn {
+    width: 140px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+.yellow {
+    background-color: #f99b45;
+}
+
+.active {
+    opacity: 1;
+    box-shadow: 0 0 25px white;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.start-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-btn:hover {
+    background: #ddd;
+}
+
+@media (max-width: 500px) {
+    .board {
+        grid-template-columns: repeat(2, 110px);
+        grid-template-rows: repeat(2, 110px);
+        gap: 20px;
+    }
+
+    .btn {
+        width: 110px;
+        height: 110px;
+    }
+}
